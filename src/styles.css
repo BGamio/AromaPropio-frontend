@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #f2e5d7; /* color de fondo beige */
+  font-family: 'Georgia', serif;
+  color: #5a3e2b; /* color marrón para el texto */
+}
+
+.container {
+  margin: 2em;
+  padding: 2em;
+  background-color: #fff7f0; /* fondo blanco cálido */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #b1740f; /* tono dorado */
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #b1740f; /* botón dorado */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8e5b0d;
+}

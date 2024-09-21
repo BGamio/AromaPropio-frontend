@@ -1,0 +1,21 @@
+<div class="form-container">
+  <h2>Agregar Perfume</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label>Nombre:</label>
+    <input [(ngModel)]="perfume.name" name="name" required>
+
+    <label>Descripción:</label>
+    <textarea [(ngModel)]="perfume.description" name="description"></textarea>
+
+    <label>Precio:</label>
+    <input type="number" [(ngModel)]="perfume.price" name="price" required>
+
+    <label>Familia Olfativa:</label>
+    <select [(ngModel)]="perfume.olfactoryFamilyId" name="olfactoryFamilyId">
+      <option *ngFor="let family of olfactoryFamilies" [value]="family.id">{{ family.name }}</option>
+    </select>
+
+    <button type="submit">Agregar Perfume</button>
+  </form>
+</div>
+
